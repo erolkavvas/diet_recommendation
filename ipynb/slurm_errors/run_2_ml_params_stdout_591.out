@@ -1,0 +1,5 @@
+Fixed EX_tDHNACOA(e)
+(9285, 808)
+X_flux.shape after dropping constant columns: (9285, 788)
+vegan
+... normalizing raw ASV abundances to fractions, dropping samples with 0 total abundances

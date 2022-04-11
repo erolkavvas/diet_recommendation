@@ -1,0 +1,14 @@
+cobra==0.22.1
+imbalanced_learn==0.7.0
+imblearn==0.0
+matplotlib==3.4.3
+micom==0.25.1
+nevergrad==0.4.3.post8
+numpy==1.21.2
+pandas==1.3.3
+Pebble==4.6.3
+scikit_bio==0.5.7
+scikit_learn==1.0.2
+scipy==1.7.1
+seaborn==0.11.0
+tqdm==4.50.2

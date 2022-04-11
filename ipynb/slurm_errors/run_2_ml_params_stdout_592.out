@@ -1,0 +1,58 @@
+Fixed EX_tDHNACOA(e)
+(9285, 808)
+X_flux.shape after dropping constant columns: (9285, 788)
+vegan
+... normalizing raw ASV abundances to fractions, dropping samples with 0 total abundances
+flux
+vegan flux 0.001 5 l1
+vegan flux 0.001 5 l2
+vegan flux 0.001 10 l1
+vegan flux 0.001 10 l2
+vegan flux 0.001 15 l1
+vegan flux 0.001 15 l2
+vegan flux 0.001 20 l1
+vegan flux 0.001 20 l2
+vegan flux 0.001 35 l1
+vegan flux 0.001 35 l2
+vegan flux 0.001 50 l1
+vegan flux 0.001 50 l2
+vegan flux 0.001 75 l1
+vegan flux 0.001 75 l2
+vegan flux 0.001 100 l1
+vegan flux 0.001 100 l2
+vegan flux 0.001 150 l1
+vegan flux 0.001 150 l2
+vegan flux 0.001 200 l1
+vegan flux 0.001 200 l2
+vegan flux 0.01 5 l1
+vegan flux 0.01 5 l2
+vegan flux 0.01 10 l1
+vegan flux 0.01 10 l2
+vegan flux 0.01 15 l1
+vegan flux 0.01 15 l2
+vegan flux 0.01 20 l1
+vegan flux 0.01 20 l2
+vegan flux 0.01 35 l1
+vegan flux 0.01 35 l2
+vegan flux 0.01 50 l1
+vegan flux 0.01 50 l2
+vegan flux 0.01 75 l1
+vegan flux 0.01 75 l2
+vegan flux 0.01 100 l1
+vegan flux 0.01 100 l2
+vegan flux 0.01 150 l1
+vegan flux 0.01 150 l2
+vegan flux 0.01 200 l1
+vegan flux 0.01 200 l2
+vegan flux 0.1 5 l1
+vegan flux 0.1 5 l2
+vegan flux 0.1 10 l1
+vegan flux 0.1 10 l2
+vegan flux 0.1 15 l1
+vegan flux 0.1 15 l2
+vegan flux 0.1 20 l1
+vegan flux 0.1 20 l2
+vegan flux 0.1 35 l1
+vegan flux 0.1 35 l2
+vegan flux 0.1 50 l1
+vegan flux 0.1 50 l2

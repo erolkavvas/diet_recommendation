@@ -1,0 +1,13 @@
+# reset git repo
+
+rm -rf .git
+git init .
+git add .
+git commit -m "initial commit"
+git remote add origin https://github.com/erolkavvas/microbiome_xai.git
+git remote set-url origin https://github.com/erolkavvas/microbiome_xai.git
+
+
+git rm -rf --cached .
+git add .
+git commit -m ".gitignore is now working"

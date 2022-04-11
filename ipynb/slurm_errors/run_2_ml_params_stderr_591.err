@@ -1,0 +1,448 @@
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+run_hyperparams_aifspc.py:62: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+  X_flux = pd.read_csv(gut_data.dir_sim_data+FLUX_DF_NAME,index_col=0)
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/sklearn/svm/_base.py:1206: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+Exception ignored in: <Finalize object, dead>
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/synchronize.py", line 102, in _cleanup
+    sem_unlink(name)
+FileNotFoundError: [Errno 2] No such file or directory
+joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py", line 407, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/multiprocessing/queues.py", line 116, in get
+    return _ForkingPickler.loads(res)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 526, in load_temporary_memmap
+    obj = load(filename, mmap_mode)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 587, in load
+    obj = _unpickle(fobj, filename, mmap_mode)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 506, in _unpickle
+    obj = unpickler.load()
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/pickle.py", line 1210, in load
+    dispatch[key[0]](self)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 344, in load_build
+    self.stack.append(array_wrapper.read(self))
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 187, in read
+    array = self.read_mmap(unpickler)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/numpy_pickle.py", line 160, in read_mmap
+    marray = make_memmap(unpickler.filename,
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/backports.py", line 34, in make_memmap
+    mm = np.memmap(filename, dtype=dtype, mode=mode, offset=offset,
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/numpy/core/memmap.py", line 267, in __new__
+    mm = mmap.mmap(fid.fileno(), bytes, access=acc, offset=start)
+ValueError: mmap length is greater than file size
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run_hyperparams_aifspc.py", line 128, in <module>
+    n_scores = cross_validate(model, X, y, scoring=score_list, cv=skf, n_jobs=-1, error_score='raise')
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/sklearn/model_selection/_validation.py", line 267, in cross_validate
+    results = parallel(
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/parallel.py", line 1056, in __call__
+    self.retrieve()
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/parallel.py", line 935, in retrieve
+    self._output.extend(job.get(timeout=self.timeout))
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/_parallel_backends.py", line 542, in wrap_future_result
+    return future.result(timeout=timeout)
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:318: UserWarning: resource_tracker: There appear to be 38 leaked semlock objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-q6d9kz3z: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-ljirvff0: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-1149mr_m: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-42db_u52: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-p_2fnbkt: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-8ouh_nbe: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-3wg6y6v2: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-4bxh7_no: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-bfotesou: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-o19ob_z_: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-e1d07y5z: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-bmb12dix: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-y985rsho: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-birju0jq: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-h3x1c7qq: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-srysz141: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-0wsk6l6y: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-8limd7ob: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-05suz1ny: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-g_wjg115: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-17sjzu42: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-_khux_cx: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-ioo6bcgx: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-kq1favhq: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-ztx2wktn: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-g6uq3ecj: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-eml0eh4k: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-7sbhis__: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-1qrj8vy9: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-qk2u9kx3: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-k_v_bhps: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-rn_5oxu0: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-dnzsl9ty: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-b0auiwp8: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-w0mvhp6p: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-5zsyi44h: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-oi0gd308: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
+/home/ekavvas/.conda/envs/mb_py385/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:333: UserWarning: resource_tracker: /loky-3888877-19q4tuoi: FileNotFoundError(2, 'No such file or directory')
+  warnings.warn('resource_tracker: %s: %r' % (name, e))
