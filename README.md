@@ -1,16 +1,14 @@
-[![MIT][image-1]][1]
-
 # Diet recommendation via gut metabolic modeling
 
 ![overview][image-2]
 
 ## Installation
-	$ git clone https://github.com/erolkavvas/microbiome_xai.git  
-	$ cd microbiome_xai  
+	$ git clone https://github.com/erolkavvas/diet_recommendation.git  
+	$ cd diet_recommendation
 	$ pip install -r requirements.txt  
 
 
-## Estimating a Metabolic Allele Classifier
+## Workflow
 
 1. Run **`$ python 01_sample_macs.py -f INPUT_DIR -s NUM_SAMPLES -o MAC_DIR [optional parameters...]`**
 	- `INPUT_DIR`: See Input Data section below.
@@ -31,7 +29,5 @@
 	- `GENE_LIST_FILE.csv` (_OPTIONAL_). A pandas series or dataframe with index specifying the list of genes to limit the modeled alleles to. Highly recommended \<200 genes. otherwise sample deeply  
 - `cobra_model/gene_to_pathways.json`. JSON object describing mapping of genes to pathways for the organism. Required for pathway enrichments.
 - `gene_to_name.json`. JSON object describing mapping of gene ids to names. OPTIONAL.
-
-[1]:	https://github.com/erolkavvas/escher/blob/master/LICENSE
 
 [image-2]:	/Fig1_overview.png?raw=true
