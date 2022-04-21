@@ -51,6 +51,7 @@ class GutData(object):
         self.min_growth_df = pd.DataFrame() # holds sample-specific min-growth information
         self.sample_medium_dict = {}
         self.member_growth_rates = None
+        self.X_flux = pd.DataFrame()
         self.rf = RandomForestClassifier(
             n_estimators=512, min_samples_leaf=1, n_jobs=-1, bootstrap=True, max_samples=0.7, class_weight='balanced')
         self.logreg = LogisticRegression(
@@ -400,6 +401,7 @@ class GutData(object):
                   FILE_GENUS_ASVS = "../data/agp_data/taxon_genus_asvs.csv",
                   FILE_METADATA = "../tables/mcdonald_agp_metadata.txt",
                   DIR_SIM_DATA = "../data/micom-sim-data/",
+                  FILE_FLUX_DF = "micom_medium-fluxes-top50-9285_samples_fd.csv",
                   verbose=True
     ):
         self.dir_sim_data = DIR_SIM_DATA
@@ -430,6 +432,14 @@ class GutData(object):
         self.asv_df_original = self.asv_df
 
         self.metadata_df = self.metadata_df.loc[samples_intersect]
+        
+        self.X_flux = pd.read_csv(self.dir_sim_data+FILE_FLUX_DF,index_col=0, low_memory=False)
+        self.X_flux.index = self.X_flux.index.astype(str)
+        self.X_flux = mb_utils.drop_constant_cols(self.X_flux)
+        
+        X_flux_consumed = self.X_flux[self.X_flux.columns[self.X_flux.mean()<0]].copy()
+        self.X_flux_consumed_cols = [x.replace("EX_", "").replace("_m__medium", "[e]") for x in X_flux_consumed.columns]
+        # print("len(X_flux_consumed_cols):",len(X_flux_consumed_cols))
         
         
         

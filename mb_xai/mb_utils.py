@@ -167,22 +167,27 @@ def get_sigreacts_dict(X_flux, imp_feat_flux_pheno_df, gut_data, SAMPLE_NUM=1000
             
     return pheno_sigreacts_dict
 
-def food_lasso(y_df, A_df, SAVE_LOC, SAVE_ID_ALPHA=3,SAVE_FIG=False,normalize=True):
+def food_lasso(y_df, A_df, SAVE_LOC, SAVE_ID_ALPHA=3,SAVE_FIG=False,normalize=True,PVAL_FILT=None):
     """Performs compressed sensing and plots pred/actual scatters and returns food signal dfs"""
     food_signal_df = pd.DataFrame()
     lasso_alpha = 10**(-SAVE_ID_ALPHA)
     f, ax = plt.subplots(1, len(y_df.columns), figsize=(15, 5)) # 5 works well for n_feats=10
     for i, pheno_id in enumerate(y_df.columns[:]):
         print("Non-zero feats",y_df[pheno_id][y_df[pheno_id]!=0].shape)
+        y_df_pheno = y_df[pheno_id].copy()
+        
+        # if PVAL_FILT!=None:
+        #     pvals = get_pvalues(y_df_pheno, sig_cutoff=PVAL_FILT)
+        #     y_df_pheno = y_df_pheno.loc[pvals.index]
     # for pheno_id in y_df.columns:
         lasso = Lasso(alpha=lasso_alpha, normalize=normalize, max_iter=1e5)
-        lasso.fit(A_df,y_df[pheno_id])
-        score_val = lasso.score(A_df,y_df[pheno_id])
+        lasso.fit(A_df,y_df_pheno)
+        score_val = lasso.score(A_df,y_df_pheno)
         # print("score:",score_val)
 
         y_pred = A_df.dot(lasso.coef_)
         # plt.scatter(y_df[pheno_id], y_pred)
-        ax[i].scatter(y_df[pheno_id], y_pred)
+        ax[i].scatter(y_df_pheno, y_pred)
         ax[i].set_title("%s: R2=%.2f, a=%.4f"%(pheno_id, score_val,lasso_alpha))
         ax[i].set_xlabel("Actual metabolite weights")
         if i==0:
