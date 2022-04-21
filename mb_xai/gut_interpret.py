@@ -12,7 +12,6 @@ from scipy import stats
 ## Plotting stuff
 import matplotlib.pyplot as plt
 ## mb_xai stuff
-
 from mb_xai import mb_utils
 
 
@@ -32,7 +31,7 @@ class InterpretPred(object):
         self.imp_feat_flux_pheno_df_metab = pd.DataFrame()
         self.flux_pheno_direct_df_metab = pd.DataFrame()
         ## computation parameters
-        self.X_flux = pd.DataFrame()
+        # self.X_flux = pd.DataFrame()
         self.y_df = pd.DataFrame() # metabolite signal df for all phenotypes
         self.A_df = pd.DataFrame() # filtered food matrix
         self.food_signal_df = pd.DataFrame() # food signal vector for all phenotypes
@@ -168,7 +167,7 @@ class InterpretPred(object):
             
         f, ax = plt.subplots(1, 3, figsize=(12, n_feats/2)) # 5 works well for n_feats=10
         for i, (input_type, input_df) in enumerate([
-            ("abundance", self.imp_feat_abundance_pheno_df), ("flux", imp_feat_flux_df), ("diet", self.food_signal_df)
+            ("abundance", self.imp_feat_abundance_pheno_df.copy()), ("flux", imp_feat_flux_df.copy()), ("diet", self.food_signal_df.copy())
             # ("abundance", imp_feat_abundance_pheno_df), ("flux", imp_feat_flux_pheno_df_metab), ("diet", food_signal_df)
             ]):
             col = pheno+"_"+input_type
@@ -199,10 +198,158 @@ class InterpretPred(object):
             f.savefig(self.dir_sim_data+"figures/"+"key_feats_barh_%s_%s.png"%(pheno, self.SAVE_ID))
             f.savefig(self.dir_sim_data+"figures/"+"key_feats_barh_%s_%s.svg"%(pheno, self.SAVE_ID))
         return f, ax
+        
+        #### Network Visualization helper functions
+    def get_node_colors_multipartite(self, G, pheno="vegan", cutoff_val=0.05, BOOL_DIRECT=True):
+        """Returns a dict and list of colors for networkx nodes. Uses importance dataframes and a specified cutoff"""
+        color_map = []
+        node_2color_dict = {}
+        if BOOL_DIRECT==True:
+            flux_df = self.flux_pheno_direct_df_metab
+        else:
+            flux_df = self.imp_feat_flux_pheno_df_metab
+        for node in G:
+            # print(node)
+            color_id=None
+            for input_type, input_df in [
+                ("flux", flux_df), 
+                ("abundance", self.imp_feat_abundance_pheno_df), 
+                ("flux", self.food_signal_df)]:
+                if node in input_df[pheno+"_"+input_type].index:
+                    if input_df[pheno+"_"+input_type].loc[node]>cutoff_val :
+                        color_id = 'skyblue'
+                    elif input_df[pheno+"_"+input_type].loc[node]<-cutoff_val :
+                        color_id = 'lightcoral'
+                    else:
+                        color_id = "grey"
+                    color_map.append(color_id)
+                    node_2color_dict.update({node: color_id})
+            if color_id==None:
+                color_map.append("grey")
+                node_2color_dict.update({node: "grey"})
+                
+        return node_2color_dict, color_map
+    
+    def plot_genera_metab_food_networkx(
+        self, df_pheno_name, df_sig_foods_name, L_genera_metabs_foods, pheno="vegan",cutoff_val=0.5,
+        width=1,alpha=1,font_weight='bold',BOOL_DIRECT_FLUX=True,f=None,ax=None):
+        """Plots networkx multipartite graph. Colors based on feature coefficient"""
+        if f==None or ax==None:
+            f, ax = plt.subplots(1,1,figsize=(8,5), dpi=100)
+            ax.margins(0.2)
+            
+        genera_ids = list(df_pheno_name.columns)
+        metab_ids = list(set(list(df_pheno_name.index)+list(df_sig_foods_name.columns)))
+        food_ids = list(df_sig_foods_name.index)
+        num_genera, num_metabs, num_foods = len(genera_ids), len(metab_ids), len(food_ids)
+
+        G = nx.DiGraph()
+        layers = [genera_ids, metab_ids, food_ids]
+        for (i, layer) in enumerate(layers):
+            G.add_nodes_from(layer, layer=i)
+            print(i, layer)
+            
+        L_genera_metabs_foods_noweight = [tuple(x[:2]) for x in L_genera_metabs_foods]
+        G.add_edges_from(L_genera_metabs_foods_noweight)
+
+        ### Get colors using values of important features
+        node_2color_dict, color_map = self.get_node_colors_multipartite(G, pheno=pheno,cutoff_val=cutoff_val, BOOL_DIRECT=BOOL_DIRECT_FLUX)
+
+        pos = nx.multipartite_layout(G, subset_key="layer")
+        nx.draw(G,with_labels=True,pos=pos, 
+                node_color=color_map,
+                width=width,alpha=alpha,
+                font_weight=font_weight,
+                )
+        # plt.axis("equal")
+        f.tight_layout()
+        return f, ax, G
+    
             
             
             
             
+def get_genera_metab_nx_df(gut_data, gut_interpret, X_flux_notmedium, PHENO="vegan", SIG_CUTOFF_REACTS=0.05, SIG_CUTOFF_GENERA=0.05, BOOL_DIRECT_FLUX=True, SCALE_=False):
+    """Return matrix mapping key metabolites to key taxa that produce/consume them
+
+    Args:
+        gut_interpret (_type_): _description_
+        X_flux_notmedium (_type_): _description_
+        PHENO (str, optional): _description_. Defaults to "vegan".
+        SIG_CUTOFF_REACTS (float, optional): _description_. Defaults to 0.05.
+        SIG_CUTOFF_GENERA (float, optional): _description_. Defaults to 0.05.
+        BOOL_DIRECT_FLUX (bool, optional): _description_. Defaults to True.
+        SCALE_ (bool, optional): _description_. Defaults to False.
+
+    Returns:
+        _type_: _description_
+    """
+    if BOOL_DIRECT_FLUX == True:
+        imp_feat_flux = gut_interpret.flux_pheno_direct_df.copy()
+    else:
+        imp_feat_flux = gut_interpret.imp_feat_flux_pheno_df.copy()
+        
+    pheno_sigreacts_dict = mb_utils.get_sigreacts_dict(
+        gut_data.X_flux, imp_feat_flux, gut_data,SAMPLE_NUM=10000,SIG_CUTOFF=SIG_CUTOFF_REACTS)
+    df_pheno = mb_utils.get_sig_genus_exchange_CORR(
+        pheno_sigreacts_dict, X_flux_notmedium, imp_feat_flux,gut_data,
+        pheno=PHENO,SAMPLE_NUM=10000,scale=SCALE_, SIG_CUTOFF=SIG_CUTOFF_GENERA)
+    df_pheno = df_pheno.loc[(df_pheno.sum(axis=1) != 0), (df_pheno.sum(axis=0) != 0)]
+
+    df_pheno_name = df_pheno.T.copy()
+    df_pheno_name.index = df_pheno_name.index.map(lambda x: x.replace("EX_", "").replace("_m__medium", "_m"))
+    df_pheno_name = mb_utils.reindex_metab_id2name(df_pheno_name, gut_data)
+    df_pheno_name.index = df_pheno_name.index.map(lambda x: x[:30] if len(x) > 25 else x)
+    # display(df_pheno_name)
+
+    df_pheno_name[df_pheno_name.notnull()]=-1
+
+    L_genera_metabs=list(df_pheno_name.unstack()[df_pheno_name.unstack().notnull()].reset_index().itertuples(name=None, index=None))
+    return df_pheno_name, L_genera_metabs
+
+def get_metab_food_nx_df(gut_data, gut_interpret, pheno="vegan",SIG_CUTOFF_METABS = 0.05, SIG_CUTOFF_FOODS = 0.05):
+    """Return matrix mapping key foods to key metabolites that are constituents of them
+
+    Args:
+        gut_interpret (_type_): _description_
+        pheno (str, optional): _description_. Defaults to "vegan".
+        SIG_CUTOFF_METABS (float, optional): _description_. Defaults to 0.05.
+        SIG_CUTOFF_FOODS (float, optional): _description_. Defaults to 0.05.
+
+    Returns:
+        _type_: _description_
+    """
+    # input_type = "flux_vegan"
+    input_type = pheno+"_flux"
+
+    sig_foods = mb_utils.get_pvalues(gut_interpret.food_signal_df[input_type].sort_values(), sig_cutoff=SIG_CUTOFF_FOODS)
+    sig_foods = gut_interpret.food_signal_df[input_type].sort_values().loc[sig_foods.index]
+
+    sig_food_metabs = mb_utils.get_pvalues(gut_interpret.y_df[input_type].sort_values(), sig_cutoff=SIG_CUTOFF_METABS)
+    sig_food_metabs = gut_interpret.y_df[input_type].sort_values().loc[sig_food_metabs.index]
+    sig_food_metabs.name = input_type
+
+    df_sig_foods = pd.DataFrame()
+    for sig_food in sig_foods.index:
+        # df_sig_foods = pd.concat([df_sig_foods, gut_interpret.A_df[sig_food].loc[sig_food_metabs.index]],axis=1)
+        same_metabs = list(set(gut_interpret.A_df[sig_food][gut_interpret.A_df[sig_food]==1].index).intersection(set(sig_food_metabs.index)))
+        df_add = sig_food_metabs.loc[same_metabs]
+        df_add.name = sig_food
+        df_sig_foods = pd.concat([df_sig_foods, df_add],axis=1)
+
+    df_sig_foods = df_sig_foods.loc[(df_sig_foods.sum(axis=1) != 0), (df_sig_foods.sum(axis=0) != 0)]
+    df_sig_foods[df_sig_foods==0]=np.nan
+
+    df_sig_foods_name = df_sig_foods.copy()
+    df_sig_foods_name.index = df_sig_foods_name.index.map(lambda x: x.replace("[e]", "_m"))
+    df_sig_foods_name = mb_utils.reindex_metab_id2name(df_sig_foods_name, gut_data)
+    df_sig_foods_name.index = df_sig_foods_name.index.map(lambda x: x[:30] if len(x) > 25 else x)
+    # display(df_sig_foods_name)
+
+    df_sig_foods_name[df_sig_foods_name.notnull()]=-1
+    df_sig_foods_name = df_sig_foods_name.T
+    L_metabs_foods=list(df_sig_foods_name.unstack()[df_sig_foods_name.unstack().notnull()].reset_index().itertuples(name=None, index=None))
+    return df_sig_foods_name, L_metabs_foods
 #### Network Visualization helper functions
 def get_node_colors(G, imp_feat_flux_pheno_df, imp_feat_abundance_pheno_df, pheno="vegan",cutoff_val = 0.05):
     color_map = []
